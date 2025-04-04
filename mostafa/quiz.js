@@ -5,7 +5,6 @@ let ctx = canvas.getContext("2d");
 let text = "Choose Your Language";
 let index = 0
 let x = 0
-
 function drawLetter() {
     if (index < text.length) {
         ctx.font = "40px Pacifico "
@@ -20,15 +19,12 @@ function drawLetter() {
 }
 let interval = setInterval(drawLetter, 200)
 
-
 function Start_Second_line(){
         let text1 = "You W ant!";
         let index1 = 0
-        let x1 = 120
-        
+        let x1 = 120   
         function drawLetter1() {
             if (index1 < text1.length) {
-                // ctx.clearRect(0, 180, canvas.width, 80); // مس
                 ctx.font = "40px Pacifico "
                 ctx.fillStyle = "rgb(0, 255, 157)" 
                 ctx.fillText(text1[index1], x1, 200)
@@ -61,3 +57,8 @@ document.querySelectorAll("input[type=button]").forEach(button=>{
         }
     })
 })
+//             Theme Mode
+const checkbox = document.getElementById('themeCheckbox');
+checkbox.addEventListener('change', function () {
+  document.body.classList.toggle('dark-mode', this.checked);
+});
