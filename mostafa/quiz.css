@@ -38,11 +38,11 @@ canvas{
     text-align: center;
     transition: transform 0.5s;
 }
-canvas:hover{
+/* canvas:hover{
     cursor: pointer;
     font-weight: 600;
     transform: scale(1.2);
-}
+} */
 form input.start {
     padding: 13px 0px;
     border-radius: 17px;
